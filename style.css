@@ -1,0 +1,495 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    overflow-x:hidden;
+}
+header{
+    width:100vw;
+    height:100vh;
+    background:black;
+    background-repeat:none;
+    background-size:cover;
+
+    /* /* background:#222f3e; */
+}
+.togg{
+    background:black;
+    color:white;
+    transition:0.2s;
+}
+.nav{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    padding-left:40px;
+    padding-right:40px;
+   padding-top:40px;
+ position:fixed;
+    top:0;
+    left:0;
+    padding-bottom:40px;
+}
+nav{
+    width:400px;
+    height:100vh;
+    display:flex;
+    /* justify-content:center; */
+    flex-direction:column;
+    position:fixed;
+    top:0;
+    left:-400px;
+    background:white;
+    text-align:center;
+    padding-top:40px;
+  /* display:none; */
+}
+.closee{
+    display:none;
+    left:-400px;
+    background:red;
+}
+.adde{
+    display:none;
+}
+.showing{
+    left:0px;
+    transition:0.5s;
+}
+nav ul{
+    text-align:center;
+    padding-top:30%;
+}
+nav i{
+    text-align:right;
+    padding:10%;
+    padding-top:5px;
+}
+nav ul li{
+    display:block;
+    margin:25px;
+    padding:10px;
+   
+}
+nav ul li a{
+    font-size:22px;
+    font-family:sans-serif;
+    color:black;
+    border-bottom:2px solid black;
+}
+
+
+.nav h1{
+    font-size:28px;
+    font-family:sans-serif;
+    color:red;
+}
+nav .btn{
+    display:flex;
+}
+header .sticky{
+    background:white;
+    color:black;
+}
+
+header .sticky h1{
+    color:black;
+}
+nav .btn button{
+    width:150px;
+    height:40px;
+    font-size:18px;
+    font-family:sans-serif;
+    border:none;
+    outline:none;
+    color:white;
+    background:indigo;
+    transition:0.5s;
+}
+nav .btn button:hover{
+    background:cyan;
+    color:black;
+}
+.home{
+    width:100%;
+    height:100vh;
+    display:flex;
+   justify-content:space-around;
+   align-items:center;
+}
+.home .hbox{
+    width:400px;
+    height:400px;
+
+}
+.home .hbox h1{
+    color:white;
+    color:red;
+    padding-top:100px;
+    font-family:sans-serif;
+    font-size:37px;
+}
+.home .hbox h1 span{
+    color:white;
+    padding-top:20px;
+}
+.home .hbox p{
+    color:white;
+    font-family:sans-serif;
+    line-height:23px;
+    font-size:19px;
+    padding-top:10px;
+}
+.home .hbox img{
+    width:500px;
+    height:500px;
+    
+}
+.home .hbox button{
+    width:200px;
+    height:50px;
+    color:white;
+    font-family:sans-serif;
+    font-size:19px;
+    background:red;
+    border:none;
+    outline:none;
+    border-radius:17px;
+    margin-top:20px;
+    transition:0.4s;
+}
+.home .hbox button:hover{
+    background:indigo;
+}
+/* about */
+.about{
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ecf0f1;
+}
+.about .abox{
+width:550px;
+height:400px;
+padding-top:80px;
+}
+.about .abox h1{
+    font-size:39px;
+    font-family:sans-serif;
+    line-height:49px;
+}
+.about .abox p{
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:normal;
+    line-height:25px;
+}
+.about .abox button{
+    width:200px;
+    height:50px;
+    color:white;
+    font-family:sans-serif;
+    font-size:19px;
+    background:red;
+    border:none;
+    outline:none;
+    border-radius:17px;
+    margin-top:20px;
+    transition:0.4s;
+}
+/* section */
+section{
+    width:100%;
+    height:auto;
+}
+/* end */
+/* services */
+.service{
+    width:100%;
+    height:1100px;
+    text-align:center;
+}
+.service h1{
+    font-size:38px;
+    font-family:sans-serif;
+    padding-top:30px;
+}
+.service hr{
+    margin:0 auto;
+
+}
+.service p{
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:normal;
+    line-height:25px;
+    padding-top:10px;
+    width:640px;
+    padding-bottom:12px;
+    margin:0 auto;
+}
+.service .smain{
+    display:flex;
+    justify-content:space-around;
+    padding-top:100px;
+    flex-wrap:wrap;
+}
+.service .smain .sbox{
+    width:350px;
+    height:340px;
+    transition:0.2s;
+    padding:15px;
+    border:2px solid #bdc3c7;
+    border-radius:7px;
+    margin:30px;
+}
+.service .smain .sbox img{
+    width:150px;
+    height:100px;
+    display:block;
+    margin:0 auto;
+}
+.service .smain .sbox  h1{
+    font-family: 'Poppins', sans-serif;
+padding:12px;
+font-size:27px;
+}
+.service .smain .sbox p{
+    font-size:18px;
+    font-weight:normal;
+    line-height:30px;
+    width:96%;
+    color:#8395a7;
+}
+.service .smain .sbox:hover{
+background:#c8d6e5;
+
+}
+.service .smain .sbox:hover a{
+    color:black;}
+/*start */
+.for{
+    width:100%;
+    height:350px;
+    background:linear-gradient(to right,#4834d4,#8e44ad)
+}
+/* contact */
+.contact{
+    width:100%;
+    height:90vh;
+}
+.contact .cmain{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.contact .cmain .cbox{
+    width:500px;
+    margin:30px;
+    width:600px;
+}
+.cmain .cbox h1{
+    font-family: 'Poppins', sans-serif;
+    padding:12px;
+    font-size:32px;
+}
+.cmain .cbox p{
+    font-family: 'Poppins', sans-serif;
+    padding:12px;
+    font-size:19px;
+}
+.cmain .cbox:nth-child(2){
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+.cmain .cbox:nth-child(2) form input{
+width:500px;
+height:50px;
+padding:10px;
+border:1px solid #bdc3c7;
+margin:12px;
+font-size:16px;
+color:#c8d6e5;
+}
+.cmain .cbox:nth-child(2) form .mess{
+    margin:0 auto;
+}
+.cmain .cbox:nth-child(2) form textarea{
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+    border:1px solid #bdc3c7;
+
+}
+.cmain .cbox:nth-child(2) form button{
+    width:200px;
+    height:50px;
+    border-radius:22px;
+    background:linear-gradient(to right,#8e44ad,#3498db);
+    border:none;
+    outline:none;
+    color:white;
+    font-size:18px;
+    margin-top:15px;
+}
+.cmain .cbox:nth-child(2) form button i{
+    margin-left:7px;
+}
+
+.what{
+    position:fixed;
+    bottom:30px;
+    right:0px;
+
+}
+.what img{
+    width:100px;
+    height:100px;
+}
+
+
+
+
+
+
+/* end */
+/* footer */
+footer{
+    width:100%;
+    height:400px;
+    background:black;
+}
+.fmain{
+    width:600px;
+    margin:0 auto;
+    padding-top:100px;
+}
+.fmain h1{
+    color:white;
+    text-align:center;
+    padding-bottom:16px;
+    font-family:sans-serif;
+}
+.fmain p{
+    color:white;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    line-height:26px;
+    padding-bottom:20px;
+}
+.fmain .icon{
+    text-align:center;
+
+}
+.fmain .icon i{
+    color:white;
+    text-align:center;
+    font-size:30px;
+    margin:12px;
+}
+.border{
+    width:100%;
+    height:2px;
+    background:gray;
+    margin-top:10px;
+}
+footer p{
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    font-family: 'Poppins', sans-serif;
+    font-size:25px;
+    color:#f9ca24;
+}
+
+/* responsive */
+@media screen and (max-width:700px){
+body{
+    overflow-x:hidden;
+}
+.home{
+    width:100%;
+    height:100vh;
+}
+.home .hbox:nth-child(2){
+    display:none;
+}
+.about{
+    width:100%;
+    height:700px;
+    display:flex;
+    flex-direction:column;
+}
+.about .abox{
+width:300px;
+padding-top:10px;
+height:280px;
+}
+.about .abox h1{
+font-size:30px;
+}
+.about .abox:nth-child(2){
+    text-align:center;
+}
+.about .abox p{
+    font-size:15px;
+    text-align:justify;
+    }
+   .service{
+       width:100%;
+       height:auto;
+   }
+   .service h1{
+       font-size:28px;
+   }
+   .service p{
+       width:400px;
+   }
+   .for{
+       width:100%;
+   }
+   .cmain{
+       display:flex;
+    flex-direction:column;
+   }
+   .contact{
+ width:100%;
+   height:auto;
+   }
+   .cmain .cbox{
+       width:400px;
+       display:flex;
+       justify-content:center;
+   }
+   .cmain .cbox iframe{
+       width:500px;
+   }
+   .cmain .cbox form input{
+       width:350px;
+   }
+   footer{
+       width:100%;
+   }
+   footer h1{
+       font-size:28px;
+   }
+   footer p{
+    font-size:18px;
+}
+.fmain p{
+    width:90%;
+    padding:10px;
+}
+.nav{
+    padding:20px;
+}
+}
